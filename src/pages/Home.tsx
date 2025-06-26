@@ -1,13 +1,14 @@
 import { ThemeToggle } from "@components/ThemeToggle";
+import { StarBackground } from "@components/StarBackground";
 
-const Home: React.FC = () => {
+const Home = () => {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       {/* Theme Toggle Button */}
       <ThemeToggle />
 
       {/* Background Effects */}
-      {/* <StarBackground /> */}
+      <StarBackground />
       {/* Navbar */}
       {/* Main Content */}
       {/* Footer */}
