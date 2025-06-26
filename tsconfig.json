@@ -1,7 +1,13 @@
 {
   "files": [],
   "compilerOptions": {
-    "types": ["vite/client", "node"]
+    "types": ["vite/client", "node"],
+    "baseUrl": ".",
+
+    "paths": {
+      "@/*": ["./src/*"],
+      "@components/*": ["./src/components/*"]
+    }
   },
   "references": [
     { "path": "./tsconfig.app.json" },
