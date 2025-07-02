@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import { X, Menu } from "lucide-react";
 import { useEffect, useState } from "react";
 
-const navItems = [
+const navItems: { name: string; href: string }[] = [
   { name: "Home", href: "#me" },
   { name: "About", href: "#about" },
   { name: "Skills", href: "#skills" },
