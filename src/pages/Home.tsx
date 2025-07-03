@@ -1,7 +1,8 @@
-import { ThemeToggle } from "@components/ThemeToggle";
-import { StarBackground } from "@components/StarBackground";
-import { Navbar } from "@/components/Navbar";
+import { AboutSection } from "@/components/AboutSection";
 import { MeSection } from "@/components/MeSection";
+import { Navbar } from "@/components/Navbar";
+import { StarBackground } from "@components/StarBackground";
+import { ThemeToggle } from "@components/ThemeToggle";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
 
       <main>
         <MeSection />
+        <AboutSection />
       </main>
       {/* Footer */}
     </div>
