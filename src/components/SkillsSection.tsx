@@ -2,30 +2,36 @@ import { cn } from "@/lib/utils";
 import { useState } from "react";
 
 const skills: { name: string; level: number; category: string }[] = [
-  { name: "HTML/CSS", level: 95, category: "" },
-  { name: "JavaScript", level: 95, category: "" },
-  { name: "React", level: 95, category: "" },
-  { name: "TypeScript", level: 95, category: "" },
-  { name: "Next.js", level: 95, category: "" },
-  { name: "Tailwind CSS", level: 50, category: "" },
+  { name: "HTML/CSS", level: 95, category: "Frontend" },
+  { name: "JavaScript", level: 80, category: "Frontend" },
+  { name: "React", level: 80, category: "Frontend" },
+  { name: "TypeScript", level: 95, category: "Frontend" },
+  { name: "Next.js", level: 50, category: "Backend" },
+  { name: "Tailwind CSS", level: 50, category: "Frontend" },
 
-  { name: "node.js", level: 95, category: "" },
+  { name: "node.js", level: 70, category: "Backend" },
 
   { name: "Github", level: 95, category: "Tools" },
-  { name: "VS Code", level: 95, category: "" },
+  { name: "VS Code", level: 95, category: "Tools" },
+  { name: "Docker", level: 50, category: "Tools" },
 
-  { name: "Go", level: 95, category: "Programming Languages" },
-  { name: "SQL", level: 95, category: "" },
-  { name: "Python", level: 95, category: "" },
-  { name: "C++", level: 95, category: "" },
-  { name: "Java", level: 95, category: "" },
-  { name: "C", level: 95, category: "" },
+  { name: "Go", level: 70, category: "Programming Languages" },
+  { name: "SQL", level: 70, category: "Programming Languages" },
+  { name: "Python", level: 90, category: "Programming Languages" },
+  { name: "C++", level: 85, category: "Programming Languages" },
+  { name: "Java", level: 80, category: "Programming Languages" },
+  { name: "C", level: 75, category: "Programming Languages" },
 
-  { name: "Docker", level: 95, category: "" },
-  { name: "Spring Boot", level: 95, category: "" },
+  { name: "Spring Boot", level: 95, category: "Backend" },
 ];
 
-const categories: string[] = ["all", "Programming Languages", "Tools"];
+const categories: string[] = [
+  "all",
+  "Programming Languages",
+  "Tools",
+  "Frontend",
+  "Backend",
+];
 
 export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState<string>("all");
