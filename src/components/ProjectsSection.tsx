@@ -24,7 +24,7 @@ const projects: {
     title: "Code&Grow",
     description:
       "A website for helping users learn programming languages through online lessons, built-in code editor for practice, and AI feedback.",
-    image: "/projects/codegrow.png",
+    image: "/portfolio/projects/codegrow.png",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "React", "JavaScript"],
     url: "https://project-pj05-codegrow.vercel.app/",
     githubUrl: "#",
