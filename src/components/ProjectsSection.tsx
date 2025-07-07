@@ -34,7 +34,7 @@ const projects: {
     title: "Chromatic Tunor",
     description:
       "An Embedded System project on a FPGA board in C that implements a chromatic tuner, which detects the frequency of the sound with FFT and displays the closest note.",
-    image: "/projects/chromatic-tuner.png",
+    image: "",
     tags: ["C", "Embedded Systems"],
     url: "#",
     githubUrl: "https://github.com/30912hyl/chromatic_tumor",
