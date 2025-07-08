@@ -24,8 +24,8 @@ const Home = () => {
       <main>
         <MeSection />
         <AboutSection />
-        <SkillsSection />
         <ProjectsSection />
+        <SkillsSection />
         <ContactSection />
       </main>
       {/* Footer */}
