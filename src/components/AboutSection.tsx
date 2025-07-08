@@ -13,20 +13,22 @@ export const AboutSection = () => {
             <h3 className="text-2xl font-semibold">Passionate CS student</h3>
 
             <p className="text-muted-foreground">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-              facilisis quam vitae placerat tempus. Vestibulum in ligula
-              suscipit, facilisis urna nec, viverra nulla. Donec consequat, nisl
-              non semper suscipit, sapien nunc fermentum nisl, at placerat ante
-              purus ut orci. Sed eu mauris laoreet
+              I'm a passionate Computer Science student with a curiosity that
+              has led me to explore a wide spectrum of the field — from the
+              intricacies of low-level operating systems, the creativity of game
+              development, and the practicality of full-stack web applications.
+              During my time in college, I’ve dabbled in building a custom
+              database system in Go, designed responsive web apps, and worked on
+              system-level projects that deepened my understanding of how
+              computers really work and at the same time showed me just how
+              broad the field of computer science truly is.
             </p>
 
             <p className="text-muted-foreground">
-              maximus justo id, tincidunt elit. Vestibulum efficitur est sed mi
-              venenatis, vel viverra ex venenatis. Maecenas facilisis massa ut
-              nisl condimentum blandit. Pellentesque at erat velit. Donec sed
-              lorem rutrum, tempus libero id, dapibus mi. Duis porttitor turpis
-              sed feugiat consectetur. Maecenas volutpat ligula vitae egestas
-              tempus. Sed interdum et lectus ut convallis.
+              I'm always eager to learn and grow, and I'm excited to see where
+              my journey in computer science will take me next. Whether it's
+              diving deeper into a specific area or exploring new technologies,
+              I'm ready for the challenge.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
