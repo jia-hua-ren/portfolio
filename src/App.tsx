@@ -1,6 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import { NotFound } from "./pages/NotFound";
+import ProjectsPage from "@/pages/ProjectsPage";
+// import { Projects } from "@/pages/Projects";
 
 function App() {
   return (
@@ -8,7 +10,8 @@ function App() {
       <BrowserRouter basename="/portfolio/">
         <Routes>
           <Route index element={<Home />} />
-          <Route path="/portfolio/*" element={<NotFound />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </>
