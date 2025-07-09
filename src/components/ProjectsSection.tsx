@@ -1,9 +1,12 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
-import { projects } from "@/data/projectsData"; // Adjust the import path as necessary
+import { type Project } from "@/data/projectsData"; // Adjust the import path as necessary
 
-const featuredProjects = projects.slice(1);
+type ProjectsSectionProps = {
+  projects: Project[];
+};
+// const featuredProjects = projects.slice(1);
 
-export const ProjectsSection = () => {
+export const ProjectsSection = ({ projects }: ProjectsSectionProps) => {
   return (
     <section id="projects" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
@@ -16,7 +19,7 @@ export const ProjectsSection = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {featuredProjects.map((project, key) => (
+          {projects.map((project, key) => (
             <div
               key={key}
               className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"

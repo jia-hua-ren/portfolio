@@ -3,6 +3,7 @@ import { Navbar } from "@/components/Navbar";
 import { ProjectsSection } from "@/components/ProjectsSection";
 import { StarBackground } from "@/components/StarBackground";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { projects } from "@/data/projectsData"; // Import all projects
 
 const ProjectsPage = () => {
   return (
@@ -18,7 +19,7 @@ const ProjectsPage = () => {
       {/* Main Content */}
 
       <main>
-        <ProjectsSection />
+        <ProjectsSection projects={projects} />
       </main>
       {/* Footer */}
       <Footer />

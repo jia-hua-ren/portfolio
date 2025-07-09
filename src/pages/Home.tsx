@@ -7,6 +7,7 @@ import { SkillsSection } from "@/components/SkillsSection";
 import { StarBackground } from "@components/StarBackground";
 import { ThemeToggle } from "@components/ThemeToggle";
 import { Footer } from "@/components/Footer";
+import { featuredProjects } from "@/data/projectsData";
 
 const Home = () => {
   return (
@@ -24,7 +25,7 @@ const Home = () => {
       <main>
         <MeSection />
         <AboutSection />
-        <ProjectsSection />
+        <ProjectsSection projects={featuredProjects} />
         <SkillsSection />
         <ContactSection />
       </main>

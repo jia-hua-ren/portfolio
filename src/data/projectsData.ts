@@ -1,6 +1,4 @@
-
-
-export const projects: {
+export type Project = {
   id: number;
   title: string;
   description: string;
@@ -8,7 +6,9 @@ export const projects: {
   tags: string[];
   url: string;
   githubUrl: string;
-}[] = [
+};
+
+export const projects: Project[] = [
   {
     id: 1,
     title: "KOS",
@@ -50,3 +50,5 @@ export const projects: {
     githubUrl: "https://github.com/jlang61/avalution",
   },
 ];
+
+export const featuredProjects: Project[] = projects.slice(1);
