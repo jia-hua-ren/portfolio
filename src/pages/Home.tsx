@@ -2,12 +2,11 @@ import { AboutSection } from "@/components/AboutSection";
 import { ContactSection } from "@/components/ContactSection";
 import { MeSection } from "@/components/MeSection";
 import { Navbar } from "@/components/Navbar";
-import { ProjectsSection } from "@/components/ProjectsSection";
 import { SkillsSection } from "@/components/SkillsSection";
 import { StarBackground } from "@components/StarBackground";
 import { ThemeToggle } from "@components/ThemeToggle";
 import { Footer } from "@/components/Footer";
-import { featuredProjects } from "@/data/projectsData";
+import { FeaturedProjectsSection } from "@/components/FeaturedProjectsSection";
 
 const Home = () => {
   return (
@@ -25,7 +24,7 @@ const Home = () => {
       <main>
         <MeSection />
         <AboutSection />
-        <ProjectsSection projects={featuredProjects} />
+        <FeaturedProjectsSection />
         <SkillsSection />
         <ContactSection />
       </main>
