@@ -76,12 +76,12 @@ export const ProjectsSection = ({ projects }: ProjectsSectionProps) => {
       </div>
 
       <div className="text-center mt-12 space-y-4">
-        <a
+        {/* <a
           href="/portfolio/projects"
           className="cosmic-button w-fit flex items-center mx-auto gap-2 mb-4"
         >
           View Detailed Project Timeline <ArrowRight size={16} />
-        </a>
+        </a> */}
         <a
           className="cosmic-button w-fit flex items-center mx-auto gap-2"
           target="_blank"
