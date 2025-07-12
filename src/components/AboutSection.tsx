@@ -1,4 +1,4 @@
-// import { Code, User, Briefcase } from "lucide-react";
+import { GraduationCap, User, Train } from "lucide-react";
 
 export const AboutSection = () => {
   return (
@@ -8,20 +8,19 @@ export const AboutSection = () => {
           About <span className="text-primary"> Me</span>
         </h2>
 
-        {/* md:grid-cols-2 */}
-        <div className="grid grid-cols-1 gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             {/* <h3 className="text-2xl font-semibold">Passionate CS student</h3> */}
 
             <p className="text-muted-foreground">
               I'm a passionate Computer Science student with a curiosity that
-              has led me to explore a wide spectrum of the field — from the
+              has led me to explore a wide spectrum of the field -- from the
               intricacies of low-level operating systems, the creativity of game
               development, and the practicality of full-stack web applications.
-              During my time in college, I’ve dabbled in building a custom
+              During my time in college, I've dabbled in building a custom
               database system in Go, designed responsive web apps, and worked on
               system-level projects that deepened my understanding of how
-              computers really work and at the same time showed me just how
+              computers really work, and at the same time showed me just how
               broad the field of computer science truly is.
             </p>
 
@@ -48,18 +47,19 @@ export const AboutSection = () => {
             </div>
           </div>
 
-          {/* <div className="grid grid-cols-1 gap-6">
+          <div className="grid grid-cols-1 gap-6">
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary-10">
-                  <Code className="h-6 w-6 text-primary" />
+                  <GraduationCap className="h-6 w-6 text-primary" />
                 </div>
 
                 <div className="text-left">
-                  <h4 className="text-lg font-semibold">Web Development</h4>
+                  <h4 className="text-lg font-semibold">Education</h4>
                   <p className="text-muted-foreground">
-                    alsjdalsdna saljdsa asd nasld as as nksa lkasd
+                    University of California, Santa Barbara
                   </p>
+                  <p className="text-muted-foreground">Graduated June 2025</p>
                 </div>
               </div>
             </div>
@@ -69,9 +69,10 @@ export const AboutSection = () => {
                   <User className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="text-lg font-semibold">Web Development</h4>
+                  <h4 className="text-lg font-semibold">Adaptability</h4>
                   <p className="text-muted-foreground">
-                    alsjdalsdna saljdsa asd nasld as as nksa lkasd
+                    I thrive in dynamic environments and pick up new tools or
+                    concepts quickly.
                   </p>
                 </div>
               </div>
@@ -79,17 +80,18 @@ export const AboutSection = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary-10">
-                  <Briefcase className="h-6 w-6 text-primary" />
+                  <Train className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="text-lg font-semibold">Web Development</h4>
+                  <h4 className="text-lg font-semibold">Hobbies</h4>
                   <p className="text-muted-foreground">
-                    alsjdalsdna saljdsa asd nasld as as nksa lkasd
+                    I love to travel and explore new places, especially on
+                    trains.
                   </p>
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </section>
