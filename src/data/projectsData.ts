@@ -43,9 +43,16 @@ export const projects: Project[] = [
     id: 3,
     title: "Code&Grow",
     description:
-      "A website for helping users learn programming languages through online lessons, built-in code editor for practice, and AI feedback.",
+      "A website for helping users learn programming languages through online lessons, built-in code editor for practice, and AI feedback. Created with a team of 6 practicing Agile development.",
     image: "/portfolio/projects/codegrow.png",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "React", "JavaScript"],
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "React",
+      "JavaScript",
+      "Agile",
+    ],
     url: "https://project-pj05-codegrow.vercel.app/",
     githubUrl: "#",
   },
@@ -54,7 +61,7 @@ export const projects: Project[] = [
     id: 4,
     title: "MerkleDB optimized blockchain storage database",
     description:
-      "Mentored by Aaron Buchwald from AvaLabs, a project that is built upon AvalanchGo's interface which utilizes the merkle tree's own structure to store on disk directly, bypassing the need for an often inefficient key-value store.",
+      "A capstone project with 5 people, mentored by Aaron Buchwald from AvaLabs. A database system that is built upon AvalanchGo's interface, which utilizes the merkle tree's own structure to store on disk directly, bypassing the need for an often inefficient key-value store.",
     image: "/portfolio/projects/avalution.png",
     tags: ["Go", "Database"],
     url: "https://capstone.cs.ucsb.edu/teams.html#team10",
