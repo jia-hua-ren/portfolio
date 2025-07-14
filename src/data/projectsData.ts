@@ -33,7 +33,7 @@ export const projects: Project[] = [
     id: 3,
     title: "Student Information System",
     description:
-      "Designed and implemented relational database schemas with various integrity constraints for a fictional college's student and course information",
+      "Designed and implemented relational database schemas with various integrity constraints for a fictional college's student and course information, which can be accessed through a Java CLI",
     image: "/portfolio/projects/studentInfoSystem.png",
     tags: ["SQL", "Java", "Oracle JDBC", "Database"],
     url: "#",
