@@ -1,4 +1,4 @@
-import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 import { type Project } from "@/data/projectsData"; // Adjust the import path as necessary
 
 type ProjectsSectionProps = {
@@ -73,22 +73,6 @@ export const ProjectsSection = ({ projects }: ProjectsSectionProps) => {
             </div>
           </div>
         ))}
-      </div>
-
-      <div className="text-center mt-12 space-y-4">
-        {/* <a
-          href="/portfolio/projects"
-          className="cosmic-button w-fit flex items-center mx-auto gap-2 mb-4"
-        >
-          View Detailed Project Timeline <ArrowRight size={16} />
-        </a> */}
-        <a
-          className="cosmic-button w-fit flex items-center mx-auto gap-2"
-          target="_blank"
-          href="https://github.com/jia-hua-ren"
-        >
-          Check My Github <ArrowRight size={16} />
-        </a>
       </div>
     </div>
   );
