@@ -14,7 +14,7 @@ export const FeaturedProjectsSection = () => {
         <div className="text-center mt-12 space-y-4">
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
-            href="/portfolio/projects"
+            href="/portfolio/#/projects"
           >
             Check My Other Projects <ArrowRight size={16} />
           </a>

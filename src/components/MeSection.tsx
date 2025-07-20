@@ -26,9 +26,16 @@ export const MeSection = () => {
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
-            <a href="#projects" className="cosmic-button">
+            <button
+              className="cosmic-button"
+              onClick={() =>
+                document
+                  .getElementById("projects")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
               View My Work
-            </a>
+            </button>
           </div>
         </div>
       </div>

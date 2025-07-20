@@ -32,10 +32,17 @@ export const AboutSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-              <a href="#contact" className="cosmic-button">
+              <button
+                className="cosmic-button"
+                onClick={() =>
+                  document
+                    .getElementById("contact")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
+              >
                 {" "}
                 Get In Touch
-              </a>
+              </button>
 
               {/* <a
                 href="#cv"
