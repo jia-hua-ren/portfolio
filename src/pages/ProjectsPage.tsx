@@ -8,7 +8,7 @@ import { ArrowLeft } from "lucide-react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const categories: string[] = ["Card View", "MY JOURNEY"];
+const categories: string[] = ["Card View"]; //, "MY JOURNEY"
 const ProjectsPage = () => {
   const [category, setCategory] = useState<string>("Card View");
   const navigate = useNavigate();
