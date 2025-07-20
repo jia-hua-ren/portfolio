@@ -5,8 +5,8 @@ import { useEffect, useState } from "react";
 const navItems: { name: string; href: string }[] = [
   { name: "Home", href: "#me" },
   { name: "About", href: "#about" },
-  { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
+  { name: "Skills", href: "#skills" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -44,13 +44,18 @@ export const Navbar = () => {
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-8">
           {navItems.map((item, key) => (
-            <a
+            <button
               key={key}
-              href={item.href}
+              onClick={() => {
+                const target = document.getElementById(item.href.slice(1)); // remove the "#" from href
+                if (target) {
+                  target.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
               className="text-foreground/80 hover:text-primary transition-colors duration-300"
             >
               {item.name}
-            </a>
+            </button>
           ))}
         </div>
 
