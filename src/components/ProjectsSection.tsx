@@ -1,11 +1,20 @@
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, X } from "lucide-react";
 import { type Project } from "@/data/projectsData"; // Adjust the import path as necessary
+import { useState } from "react";
 
 type ProjectsSectionProps = {
   projects: Project[];
 };
 
 export const ProjectsSection = ({ projects }: ProjectsSectionProps) => {
+  const [lightboxSrc, setLightboxSrc] = useState<string | null>(null);
+
+  const openLightbox = (src: string) => {
+    setLightboxSrc(src);
+  };
+
+  const closeLightbox = () => setLightboxSrc(null);
+
   return (
     <div>
       <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
@@ -25,6 +34,7 @@ export const ProjectsSection = ({ projects }: ProjectsSectionProps) => {
                 <img
                   src={project.image}
                   alt={project.title}
+                  onClick={() => openLightbox(project.image)}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
@@ -74,6 +84,29 @@ export const ProjectsSection = ({ projects }: ProjectsSectionProps) => {
           </div>
         ))}
       </div>
+
+      {lightboxSrc && (
+        <div
+          className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center"
+          onClick={closeLightbox}
+        >
+          <div className="relative max-w-[90vw] max-h-[90vh]">
+            <button
+              onClick={closeLightbox}
+              className="absolute -top-8 -right-8 p-2 rounded-full bg-card border border-border shadow-lg hover:shadow-xl transition-transform"
+            >
+              <X size={18} />
+            </button>
+
+            <img
+              src={lightboxSrc}
+              alt="Expanded project"
+              onClick={(e) => e.stopPropagation()}
+              className="block max-w-full max-h-[80vh] rounded-md shadow-2xl transform transition-transform duration-300 scale-100"
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
