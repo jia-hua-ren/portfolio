@@ -9,7 +9,6 @@ const navItems: { name: string; href: string }[] = [
   { name: "Skills", href: "#skills" },
   { name: "Contact", href: "#contact" },
 ];
-
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -27,13 +26,15 @@ export const Navbar = () => {
     <nav
       className={cn(
         "fixed w-full z-40 transition-all duration-300",
-        isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
+        isScrolled
+          ? "py-3 bg-background/80 backdrop-blur-md shadow-xs"
+          : "py-5",
       )}
     >
       <div className="container flex items-center justify-between">
         <a
           className="text-xl font-bold text-primary flex items-center"
-          href="#me"
+          href="/portfolio/"
         >
           <span className="relative z-10">
             <span className="text-glow text-foreground"> Jiahua (Roy) </span>{" "}
@@ -75,7 +76,7 @@ export const Navbar = () => {
             "transition-all duration-300 md:hidden",
             isMenuOpen
               ? "opacity-100 pointer-events-auto"
-              : "opacity-0 pointer-events-none"
+              : "opacity-0 pointer-events-none",
           )}
         >
           <div className="flex flex-col space-y-8 text-xl">

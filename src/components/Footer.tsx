@@ -2,6 +2,10 @@ import { ArrowUp, Github } from "lucide-react";
 
 export const Footer = () => {
   const currentYear: number = new Date().getFullYear();
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <footer className="py-8 px-4 bg-card relative border-t border-border mt-12 pt-8 flex justify-between items-start">
       <div className="flex flex-col space-y-1">
@@ -20,12 +24,14 @@ export const Footer = () => {
         </p>
       </div>
 
-      <a
-        href="#me"
+      <button
+        type="button"
+        onClick={scrollToTop}
+        aria-label="Scroll to top"
         className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-colors"
       >
         <ArrowUp size={20} />
-      </a>
+      </button>
     </footer>
   );
 };
